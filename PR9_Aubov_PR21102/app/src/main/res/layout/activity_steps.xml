@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".steps">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/yellow"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/free_icon_rotate_8983034" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:text="1583 steps"
+        android:textSize="20sp"
+        android:textColor="@color/textblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="366dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/round_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diagr" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="52dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_layout"
+        android:paddingTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/round_btn"
+            android:gravity="right|center_vertical"
+            android:paddingRight="60dp"
+            android:text="маршруты"
+            android:textSize="16sp"
+            android:textColor="@color/orange"
+            android:drawableLeft="@drawable/free_icon_walking_7903769"
+            android:theme="@style/DarkGray_Theme" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/round_btn"
+            android:gravity="right|center_vertical"
+            android:paddingRight="60dp"
+            android:text="краткая информация"
+            android:textSize="16sp"
+            android:onClick="onClickBrowserActivity"
+            android:textColor="@color/green"
+            android:drawableLeft="@drawable/free_icon_more_information_6464464"
+            android:layout_marginTop="15dp"
+            android:theme="@style/DarkGray_Theme" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/round_btn"
+            android:gravity="right|center_vertical"
+            android:paddingRight="60dp"
+            android:text="информация"
+            android:textSize="16sp"
+            android:textColor="@color/mint"
+            android:drawableLeft="@drawable/free_icon_info_10562418"
+            android:layout_marginTop="15dp"
+            android:theme="@style/DarkGray_Theme" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

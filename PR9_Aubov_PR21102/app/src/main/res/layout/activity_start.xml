@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/startbg"
+    tools:context=".start">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:background="@drawable/round_btn"
+        android:gravity="right|center_vertical"
+        android:paddingRight="60dp"
+        android:text="моё смарт-устройство"
+        android:textSize="16sp"
+
+        android:drawableLeft="@drawable/free_icon_television_remote_control_9872436"
+        android:theme="@style/Yellow_Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingRight="60dp"
+        android:text="1.3 km"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/free_icon_location_sign_17736"
+        android:theme="@style/Gray_Theme"
+        android:background="@drawable/round_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_btn"
+        android:gravity="right|center_vertical"
+        android:paddingRight="60dp"
+        android:text="59 kcal"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/free_icon_flame_10433599"
+        android:theme="@style/Gray_Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_btn"
+        android:gravity="right|center_vertical"
+        android:paddingRight="60dp"
+        android:text="30 min"
+        android:onClick="onClickStepsActivity"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/free_icon_clock_10596595"
+        android:theme="@style/Gray_Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="390dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_btn"
+        android:gravity="right|center_vertical"
+        android:paddingRight="60dp"
+        android:text="1583 steps"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/free_icon_rotate_8983034"
+        android:theme="@style/Gray_Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_btn"
+        android:drawableLeft="@drawable/free_icon_wifi_signal_5393027"
+        android:drawableBottom="@drawable/graph"
+        android:paddingRight="65dp"
+        android:paddingLeft="10dp"
+        android:gravity="left"
+        android:text="62 kg"
+        android:textSize="16sp"
+        android:theme="@style/Gray_Theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_btn"
+        android:drawableLeft="@drawable/free_icon_like_1946346"
+        android:drawableBottom="@drawable/graph"
+        android:paddingRight="65dp"
+        android:paddingLeft="10dp"
+        android:gravity="left"
+        android:text="82 bmp"
+        android:textSize="16sp"
+        android:theme="@style/Gray_Theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/button7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
